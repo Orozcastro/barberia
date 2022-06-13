@@ -1,0 +1,133 @@
+html {
+    box-sizing: border-box;   
+}
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: #cccccc; */
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #bbbbbb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2.5rem;
+}
+header img {
+    width: 100px;
+}
+
+nav a {
+    color:black;
+    font-weight: bold;
+    font-size: 22px;
+    padding: .5rem
+}
+nav a:hover {
+    color:#c78c19;
+    transform: scale(1.1) ; /* transformar la escala del elemento*/
+}
+
+/******** main *******/
+main {
+    padding:3rem
+}
+h1 {
+    text-align: center;
+}
+form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    align-items: center;
+    padding: 3rem;
+    width:35%;
+    background-color: #bbbbbb;
+    border-radius: 1rem;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: .5rem 0;
+}
+.form-input label {
+    align-items: start;
+    /* text-align: start; */
+}
+.form-input input , textarea{
+    width: 300px;
+}
+
+.form-input-contacto {
+    margin-bottom: 1rem;
+}
+.form-input-checkbox {
+    display: flex;    /* flex-direction: column; */
+    margin: 1rem;
+}
+.form-input-horario {
+    margin-bottom: 0;
+}
+.form-input p {
+    margin: 0rem;
+}
+
+/* .form-input-submit {
+    width: 100%;
+} */
+.enviar {
+    width:15rem;
+    padding: 1rem;
+    font-size: 18px;
+    font-weight: bold;
+    background-color:green;
+    border: none;
+    border-radius: 7px;
+    transition: 1s all; /* para hacer que sea mas lento el cambio de transicion al background o a todos con ALL*/
+    cursor: pointer;
+}
+.enviar:hover {
+    background-color:#0b530b;
+    transform: scale(1.1) ; /* transformar la escala del elemento*/
+    /* transform: rotate(70deg); rotar en grados */
+    /*transform: scale(1.1) rotate(70deg);  aplicar 2 transformaciones en la misma linea*/
+}
+
+/************************** table ************************************/
+table {
+    margin: 3rem;
+    border-collapse: collapse; 
+}
+thead {
+    background-color: #555555;
+    color: white;
+    font-weight: bold;
+}
+td, th{
+    border:1px solid black;
+    padding: 5px 8px;
+}
+
+/************************* foter */
+footer {
+    text-align: center;
+    background: url(img/bg.jpg);
+    padding: 1.5rem;
+}
+footer img {
+    width: 8rem;
+}
+footer p {
+    color: white;
+    font-size:.9rem;
+    margin-top: 1rem;
+}

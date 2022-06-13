@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='reset.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='contacto.css'>
+    <script src='main.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png" alt="logo de la barberia">
+        <nav>
+            <a href="index.html">
+                HOME
+            </a>
+            <a href="productos.html">
+                PRODUCTOS
+            </a>
+            <a href="contacto.html">
+                CONTACTO
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+        <h1>Contacto</h1>
+        <form action="" class="formulario">
+            <div class="form-input">
+                <label for="nombreApellido">Nombre y Apellido</label>
+                <input type="text" id="nombreApellido" required>
+            </div>
+            <div class="form-input">
+                <label for="email">Correo electronico</label>
+                <input type="email" id="email" required placeholder="email@dominio.com">
+            </div>
+            <div class="form-input">
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" required placeholder="(XX) XXXX XXXX">
+            </div>
+            <div class="form-input">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje" required cols="30" rows="10"></textarea>
+                <!-- <input type="tel" id=""> -->
+            </div>
+
+            <!-- fileset hace referencia que todos los campos pertenecen al mismo grupo-->
+            <fieldset class="form-input-contacto">
+                <!-- <legend></legend> título de un grupo de campos en cualquier formulario-->
+                <p>Como te gustaria que te contactemos?</p>
+                <div class="contacto">
+                    <input type="radio" name="contacto" value="email" id="radio-email">
+                    <label for="radio-email">Email</label>
+                </div>
+                <div class="contacto">
+                    <input type="radio" name="contacto" value="telefono" id="radio-telefono">
+                    <label for="radio-telefono">Telefono</label>
+                </div>
+                <div class="contacto">
+                    <input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>
+                    <label for="radio-whatsapp">WhatsApp</label>
+                </div>
+            </fieldset>
+
+
+            <fileset class="form-input">
+                <p>En cual horario prefires ser atendido?</p>
+                <select name="" id="">
+                    <option value="">Mañana</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noche</option>
+                </select>
+            </fileset>
+
+            <div class="form-input-checkbox">
+                <input type="checkbox" id="" checked>
+                <label for=""> Me gustaria recibir novedades de la Barberia</label>
+
+            </div>
+            <div class="form-input-submit">
+                <input type="submit" value="Enviar" class="enviar">
+            </div>
+
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>08h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>08h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>08h - 20h</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </main>
+
+    <footer>
+        <img src="img/logo-blanco.png" alt="logo de la barberia">
+        <p>&copy; Copyrigth Barberia - 2022</p>
+    </footer>
+</body>
+
+</html>
